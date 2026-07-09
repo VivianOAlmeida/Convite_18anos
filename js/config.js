@@ -1,4 +1,4 @@
-const CONFIG = {
+export const CONFIG = {
     aniversario: "Vivian",
     data: "22 de Agosto de 2026",
     horario: "15:00",
