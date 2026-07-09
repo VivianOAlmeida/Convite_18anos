@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap');
+
+*{box-sizing:border-box;margin:0;padding:0}
+
+body{
+  min-height:100vh;
+  font-family:Poppins,sans-serif;
+  background:linear-gradient(135deg,#081C3D,#0F4C81,#2A7FFF);
+  color:white;
+}
+
+.center{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.card,.convite{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  padding:40px;
+  min-height:100vh;
+}
+
+.card{
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(12px);
+  border-radius:25px;
+  width:min(90%,500px);
+  text-align:center;
+  box-shadow:0 8px 30px rgba(0,0,0,.3);
+}
+
+.card h1{
+  margin-bottom:15px;
+  font-size:2.2rem;
+}
+
+.card p{
+  margin-bottom:20px;
+  opacity:.9;
+}
+
+select,button,input{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  margin-top:15px;
+  font-size:1rem;
+}
+
+button{
+  background:#fff;
+  color:#0F4C81;
+  font-weight:700;
+  cursor:pointer;
+  transition:.3s;
+}
+
+button:hover{
+  transform:translateY(-2px);
+}
+
+#conteudo{
+  background:rgba(255,255,255,.12);
+  backdrop-filter:blur(15px);
+  border-radius:30px;
+  padding:40px;
+  max-width:650px;
+  width:92%;
+  text-align:center;
+  box-shadow:0 10px 40px rgba(0,0,0,.35);
+}
+
+#conteudo h1{
+  font-family:'Great Vibes',cursive;
+  font-size:4rem;
+  margin-bottom:10px;
+}
+
+.info{
+  margin:25px 0;
+  line-height:1.9;
+}
+
+.maps{
+  display:inline-block;
+  margin-bottom:25px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.hidden{
+  display:none;
+}
+
+#msg{
+  margin-top:20px;
+  font-weight:600;
+}
