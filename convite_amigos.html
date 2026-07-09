@@ -5,3 +5,30 @@
 <title>Convite Amigos</title>
 <link rel="stylesheet" href="css/style.css" />
 </head>
+<body>
+    <audio id="musica" loop>
+        <source src="assets/musica.mp3" type="audio/mpeg">
+    </audio>
+    <div class="convite">
+        <button id="tocar">Abrir Convite</button>
+    <div id="conteudo" class="hidden">
+    <h1>18 Anos</h1>
+    <p>Bora comemorar meus 18 anos comigo? Vai ser incrível!</p>
+    <div class="info">
+        <p><strong>Data:</strong> 22 de Agosto de 2026</p>
+        <p><strong>Horário:</strong> 15:00</p>
+        <p><strong>Local:</strong> Chácara Recanto Audi - Londrina/PR</p>
+    </div>
+    <a class="maps" href="https://maps.app.goo.gl/vipFYpWqLn95xxjt9" target="_blank">Abrir no Google Maps</a>
+    <form id="formAmigo">
+        <input type="text" id="nome" placeholder="Seu nome" required>
+        <label><input type="checkbox" id="acompanha"> Levarei acompanhante</label>
+        <input type="text" id="nomeAcompanhante" class="hidden" placeholder="Nome do acompanhante">
+        <button type="submit">Confirmar Presença</button>
+    </form>
+    <p id="msg"></p>
+    
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script type="module" src="js/convite.js"></script>
+</body>
+</html>
