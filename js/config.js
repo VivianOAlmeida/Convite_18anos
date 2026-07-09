@@ -5,7 +5,7 @@ const CONFIG = {
     local: "Chácara Recanto Audi - Londrina/PR",
     maps: "https://maps.app.goo.gl/vipFYpWqLn95xxjt9",
 
-    firebase = {
+    firebase: {
     apiKey: "AIzaSyCjzGCQ2gHbbbHDBrw5z7SZ1zLNg41-bsQ",
     authDomain: "convite-aniversario-70641.firebaseapp.com",
     projectId: "convite-aniversario-70641",
