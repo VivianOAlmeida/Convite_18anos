@@ -14,3 +14,5 @@ const CONFIG = {
     appId: "1:505729266548:web:4d7678b225384252597221"
     }
 };
+
+export {CONFIG};
