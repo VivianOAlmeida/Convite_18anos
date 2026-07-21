@@ -4,15 +4,25 @@
 
 body{
   min-height:100vh;
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+
   font-family:Poppins,sans-serif;
   background:linear-gradient(135deg,#081C3D,#0F4C81,#2A7FFF);
   color:white;
+
+  overflow-x:hidden;
 }
 
 .center{
+  position:relative;
+  z-index:10;
+
   display:flex;
   justify-content:center;
   align-items:center;
+  min-height:100vh;
 }
 
 .card,.convite{
@@ -73,6 +83,7 @@ button:hover{
   width:92%;
   text-align:center;
   box-shadow:0 10px 40px rgba(0,0,0,.35);
+  z-index: 10;
 }
 
 #conteudo h1{
@@ -101,4 +112,55 @@ button:hover{
 #msg{
   margin-top:20px;
   font-weight:600;
+}
+
+.titulo{
+  display:block;
+  width:100%;
+  max-width:400px;
+  margin:0 auto 25px;
+}
+
+.lado-esquerdo,
+.lado-direito{
+  position:fixed;
+  bottom:0;
+  z-index:1;
+  pointer-events:none;
+}
+
+.lado-esquerdo{
+  left:25px;
+}
+
+.lado-direito{
+  right:25px;
+}
+
+.lado-esquerdo img,
+.lado-direito img{
+  width:220px;
+  height:auto;
+}
+
+@media (max-width:768px){
+
+  .lado-esquerdo img{
+    width:80px;
+  }
+
+  .lado-direito img{
+    width:95px;
+  }
+
+  .lado-esquerdo{
+    left:5px;
+    bottom:0;
+  }
+
+  .lado-direito{
+    right:5px;
+    bottom:0;
+  }
+
 }
